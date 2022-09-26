@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/itkxl/Documents/c/workspace/xfat/fatfs_test.c
+stdio.h
+-
+string.h
+-
+xdisk.h
+/home/itkxl/Documents/c/workspace/xfat/xdisk.h
+xfat.h
+/home/itkxl/Documents/c/workspace/xfat/xfat.h
+
+/home/itkxl/Documents/c/workspace/xfat/xdisk.h
+xtypes.h
+/home/itkxl/Documents/c/workspace/xfat/xtypes.h
+
+/home/itkxl/Documents/c/workspace/xfat/xfat.h
+xtypes.h
+/home/itkxl/Documents/c/workspace/xfat/xtypes.h
+
+/home/itkxl/Documents/c/workspace/xfat/xtypes.h
+stdint.h
+-
+
