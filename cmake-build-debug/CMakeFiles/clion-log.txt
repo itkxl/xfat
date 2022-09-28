@@ -1,4 +1,4 @@
-/home/itkxl/Documents/c/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/itkxl/Documents/c/workspace/xfat
+/home/itkxl/Documents/c/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/itkxl/Documents/do-it/fat32/xfat
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/itkxl/Documents/c/workspace/xfat/cmake-build-debug
+-- Build files have been written to: /home/itkxl/Documents/do-it/fat32/xfat/cmake-build-debug

@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/xfat.dir/main.c.o -o xfat 
+/usr/bin/cc -g CMakeFiles/xfat.dir/main.c.o CMakeFiles/xfat.dir/xdisk.c.o CMakeFiles/xfat.dir/driver.c.o -o xfat 

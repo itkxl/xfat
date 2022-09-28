@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/untitled.dir/xdisk.c.o CMakeFiles/untitled.dir/fatfs_test.c.o CMakeFiles/untitled.dir/xfat.c.o CMakeFiles/untitled.dir/driver.c.o -o untitled 

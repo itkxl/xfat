@@ -57,10 +57,10 @@ RM = /home/itkxl/Documents/c/clion/bin/cmake/linux/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/itkxl/Documents/c/workspace/xfat
+CMAKE_SOURCE_DIR = /home/itkxl/Documents/do-it/fat32/xfat
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/itkxl/Documents/c/workspace/xfat/cmake-build-debug
+CMAKE_BINARY_DIR = /home/itkxl/Documents/do-it/fat32/xfat/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/itkxl/Documents/c/workspace/xfat/cmake-build-debug/CMakeFiles /home/itkxl/Documents/c/workspace/xfat/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/itkxl/Documents/do-it/fat32/xfat/cmake-build-debug/CMakeFiles /home/itkxl/Documents/do-it/fat32/xfat/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/itkxl/Documents/c/workspace/xfat/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/itkxl/Documents/do-it/fat32/xfat/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,6 +129,30 @@ xfat/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/xfat.dir/build.make CMakeFiles/xfat.dir/build
 .PHONY : xfat/fast
 
+driver.o: driver.c.o
+.PHONY : driver.o
+
+# target to build an object file
+driver.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xfat.dir/build.make CMakeFiles/xfat.dir/driver.c.o
+.PHONY : driver.c.o
+
+driver.i: driver.c.i
+.PHONY : driver.i
+
+# target to preprocess a source file
+driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xfat.dir/build.make CMakeFiles/xfat.dir/driver.c.i
+.PHONY : driver.c.i
+
+driver.s: driver.c.s
+.PHONY : driver.s
+
+# target to generate assembly for a file
+driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xfat.dir/build.make CMakeFiles/xfat.dir/driver.c.s
+.PHONY : driver.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -153,6 +177,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/xfat.dir/build.make CMakeFiles/xfat.dir/main.c.s
 .PHONY : main.c.s
 
+xdisk.o: xdisk.c.o
+.PHONY : xdisk.o
+
+# target to build an object file
+xdisk.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xfat.dir/build.make CMakeFiles/xfat.dir/xdisk.c.o
+.PHONY : xdisk.c.o
+
+xdisk.i: xdisk.c.i
+.PHONY : xdisk.i
+
+# target to preprocess a source file
+xdisk.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xfat.dir/build.make CMakeFiles/xfat.dir/xdisk.c.i
+.PHONY : xdisk.c.i
+
+xdisk.s: xdisk.c.s
+.PHONY : xdisk.s
+
+# target to generate assembly for a file
+xdisk.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/xfat.dir/build.make CMakeFiles/xfat.dir/xdisk.c.s
+.PHONY : xdisk.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... xfat"
+	@echo "... driver.o"
+	@echo "... driver.i"
+	@echo "... driver.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... xdisk.o"
+	@echo "... xdisk.i"
+	@echo "... xdisk.s"
 .PHONY : help
 
 

@@ -3,4 +3,4 @@ project(xfat)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(xfat main.c)
+add_executable(xfat main.c xtypes.h xdisk.h xdisk.c driver.c)

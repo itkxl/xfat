@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/itkxl/Documents/c/workspace/xfat/main.c" "/home/itkxl/Documents/c/workspace/xfat/cmake-build-debug/CMakeFiles/xfat.dir/main.c.o"
+  "/home/itkxl/Documents/do-it/fat32/xfat/driver.c" "/home/itkxl/Documents/do-it/fat32/xfat/cmake-build-debug/CMakeFiles/xfat.dir/driver.c.o"
+  "/home/itkxl/Documents/do-it/fat32/xfat/main.c" "/home/itkxl/Documents/do-it/fat32/xfat/cmake-build-debug/CMakeFiles/xfat.dir/main.c.o"
+  "/home/itkxl/Documents/do-it/fat32/xfat/xdisk.c" "/home/itkxl/Documents/do-it/fat32/xfat/cmake-build-debug/CMakeFiles/xfat.dir/xdisk.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
