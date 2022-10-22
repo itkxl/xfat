@@ -7,31 +7,47 @@
 extern xdisk_driver_t disk_driver;
 
 
-#pragma pack(1)
-typedef struct _mbr_t {
+void test_get_part_count(){
+    int count;
 
-    u32_t a;
-    u16_t b;
-    u32_t c;
+    printf("start test get_part_count \n");
 
-} mbr_t;
-#pragma
+    const char * path = "/home/itkxl/Documents/do-it/fat32/xfat/disk.img";
+    xdisk_t disk;
+
+    int err = xdisk_open(&disk,"test_get_part_count",&disk_driver,path);
+    if (err){
+        printf("test get_part_count open file failed \n");
+        return;
+    }
+
+    err = xdisk_get_part_count(&disk,&count);
+
+    if (err){
+        printf("test get_part_count failed \n");
+        xdisk_close(&disk);
+        return;
+    }
+
+    printf("get_part_count:%d \n",count);
+
+    xdisk_close(&disk);
+}
+
+
 
 int main(void){
 
 
-    mbr_t * mbr = (mbr_t*)0x100;
-    printf("%p  \n",&(mbr->c));
-
     printf("hello world!\n");
 
-    const char * path = "/home/itkxl/Documents/do-it/fat32/xfat/disk_test.img";
+    const char * test_path = "/home/itkxl/Documents/do-it/fat32/xfat/disk_test.img";
 
     xdisk_t  disk;
 
     int err;
 
-    err = xdisk_open(&disk,"test",&disk_driver,(void *)path);
+    err = xdisk_open(&disk,"test",&disk_driver,(void *)test_path);
 
     if (err){
         printf("open disk failed \n");
@@ -47,8 +63,8 @@ int main(void){
         printf("close disk success \n");
     }
 
+    test_get_part_count();
+
     return 0;
-
-
 }
 
