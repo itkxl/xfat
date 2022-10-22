@@ -8,9 +8,9 @@ extern xdisk_driver_t disk_driver;
 
 int main(void){
 
-    printf("hello world!");
+    printf("hello world!\n");
 
-    const char * path = "a.img";
+    const char * path = "/home/itkxl/Documents/do-it/fat32/xfat/disk_test.img";
 
     xdisk_t  disk;
 
@@ -21,6 +21,8 @@ int main(void){
     if (err){
         printf("open disk failed");
     }
+
+    printf("open disk success");
 
     return 0;
 
