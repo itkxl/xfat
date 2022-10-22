@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/itkxl/Documents/do-it/fat32/xfat/main.c
-stdio.h
--
+/home/itkxl/Documents/do-it/fat32/xfat/xdisk.c
 xdisk.h
 /home/itkxl/Documents/do-it/fat32/xfat/xdisk.h
 
