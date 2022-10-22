@@ -36,3 +36,13 @@ xfat_err_t xdisk_read_sector(xdisk_t *disk, u8_t *buffer, u32_t start_sector, u3
     err = disk->driver->read_sector(disk,buffer,start_sector,count);
     return err;
 }
+
+xfat_err_t xdisk_write_sector(xdisk_t *disk,u8_t *buffer,u32_t start_sector,u32_t count){
+
+    xfat_err_t  err;
+    if (start_sector + count >= disk->total_sector){
+        return FS_ERROR_PARAM;
+    }
+    err = disk->driver->write_sector(disk,buffer,start_sector,count);
+    return err;
+}
