@@ -29,13 +29,25 @@ xfat_err_t xdisk_hw_open(struct _xdisk_t *disk,void *init_data){
 
 }
 
-
+/**
+ * 模拟磁盘关闭
+ * @param disk
+ * @return
+ */
 xfat_err_t xdisk_hw_close(struct _xdisk_t *disk){
     FILE * file = (FILE *)disk->data;
     fclose(file);
     return FS_ERROR_OK;
 }
 
+/**
+ * 模拟从磁盘读
+ * @param disk
+ * @param buffer
+ * @param start_sector
+ * @param count
+ * @return
+ */
 xfat_err_t xdisk_hw_read_sector(struct _xdisk_t *disk, u8_t * buffer, u32_t start_sector, u32_t count){
     u32_t  offset = start_sector * disk->sector_size;
     FILE * file = (FILE *)disk->data;
@@ -54,6 +66,14 @@ xfat_err_t xdisk_hw_read_sector(struct _xdisk_t *disk, u8_t * buffer, u32_t star
     return FS_ERROR_OK;
 }
 
+/**
+ * 模拟磁盘写
+ * @param disk
+ * @param buffer
+ * @param start_sector
+ * @param count
+ * @return
+ */
 xfat_err_t xdisk_hw_write_sector(struct _xdisk_t *disk, u8_t * buffer, u32_t start_sector, u32_t count){
 
     u32_t  offset = start_sector * disk->sector_size;
